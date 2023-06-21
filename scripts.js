@@ -1,11 +1,11 @@
 
 
 function resume(){
-    window.open("https://drive.google.com/file/d/1DfzIqXCfVaIteZhoz-q9-4ohq6-WlZ3e/view?usp=share_link","_blank");
+    window.open("https://drive.google.com/file/d/1ni1nuqFHY5xdZhr6Fm9f2ffHe4-ONIuP/view?usp=sharing","_blank");
 }
 
 function resume2(){
-    window.open("https://drive.google.com/file/d/1DfzIqXCfVaIteZhoz-q9-4ohq6-WlZ3e/view?usp=share_link","_blank");
+    window.open("https://drive.google.com/file/d/1ni1nuqFHY5xdZhr6Fm9f2ffHe4-ONIuP/view?usp=sharing","_blank");
 }
 
 let gitimages = document.querySelectorAll(".github img")
