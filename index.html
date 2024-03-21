@@ -5,668 +5,888 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="./media.css">
-    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
-    <title>Abhishek | Full-stack web developer</title>
+    <title>Abhishek | Portfolio</title>
+    <link rel="shortcut icon" href="./assets/img/logo/abhishek.png" type="image/x-icon">
+    <!--!================= Bootstrap Css =================------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!--!================= Font Awesome =================------->
+    <script src="https://kit.fontawesome.com/ff75adb155.js" crossorigin="anonymous"></script>
+
+    <!--!================= github stats =================------->
+    <link rel="stylesheet" href="assets/css/github_states.css">
+
+    <!--!================= AOS CSS =================------->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!--!================= main =================------->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media_queries.css">
+
 </head>
+<style>
 
+</style>
 
-<body>
-    <div>
-        <div class="scrollarea">
-            <!-- <div class="load">
-                <div>
-                    <h1>Welcome</h1>
-                    <img src="./images/preloader.gif" alt="">
-                    <h1>Loading...</h1>
-                </div>
-            </div> -->
-
-            <div class="nav" id="nav-menu">
-                <div class="nav-link">
-                    <a href="#home" class="nav-link home">
-                        <img src="./images/signature (1).png" alt="">
-                    </a>
-                </div>
-                <div>
-                    <div class="menu"></div>
-                </div>
-                <div class="nav-link">
-                    <div>
-                        <a href="#about" class="nav-link about">
-                            <div>
-                                <h3>ABOUT</h3>
-                            </div>
-                        </a>
-
-                        <a href="#github">
-                            <div>
-                                <h3>GITHUB</h3>
-                            </div>
-                        </a>
-
-                        <a href="#projects" class="nav-link projects">
-                            <div>
-                                <h3>PROJECTS</h3>
-                            </div>
-                        </a>
-
-                        <a href="#skills" class="nav-link skills">
-                            <div>
-                                <h3>SKILLS</h3>
-                            </div>
-                        </a>
-
-                        <a href="#contact" class="nav-link contact">
-                            <div>
-                                <h3>CONTACT</h3>
-                            </div>
-                        </a>
-
-                        <a id="resume-button-1" class="nav-link resume" href="Abhishek-Maurya-Resume.pdf"
-                            download="Abhishek-Maurya-Resume.pdf">
-                            <div onclick="resume()">
-                                <h3 id="resume-link-1">RESUME</h3>
-                            </div>
-                        </a>
-                    </div>
-
-                </div>
+<body">
+    <!--!================= Header =================------->
+    <section id="nav-menu" data-aos="fade-down" class="navigation">
+        <div class="nav_container ">
+            <a href="index.html" class="nav_logo">
+                
+               <h2 style="font-family:Lucida Handwriting;"  id="nav-link">Abhishek</h2>
+                </a>
+            <!-- Menu toggle icon for small device -->
+            <div id="menuToggle">
+                <span id="first_span"></span>
+                <span id="second_span"></span>
+                <span id="third_span"></span>
             </div>
-
-            <div class="home-section" id="home">
-                <div>
-                    <a href=""></a>
-                    <img src="./images/abhishek.png" alt="">
-                    <h1 class="name_tag" >Abhishek Kumar Maurya</h1>
-                    <p>A Creative Full stack web developer</p>
-                </div>
+            <div class="navigation_box" id="navigation_box">
+                <!-- Collapse button -->
+                <ul class="navigation_list_link_container">
+                    <li class="nav-link home" id="nav-link"> <a href="#home">Home</a> </li>
+                    <li class="nav-link about" id="nav-link"> <a href="#about">About</a> </li>
+                    <li class="nav-link projects" id="nav-link"> <a href="#projects">Project</a> </li>
+                    <li class="nav-link skills" id="nav-link"> <a href="#skills">Skills</a> </li>
+                    <li class="nav-link contact" id="nav-link"> <a href="#contact">Contact</a> </li>
+                </ul>
+                <button id="resume-button-1" class="resume_link_resume shine"><a
+                        href="./assets/pdf/Abhishek-Maurya-Resume.pdf" class="nav-link resume"
+                        target="_blank"
+                        id="resume-link-1" download="Abhishek-Maurya-Resume.pdf">RESUME</a></button>
             </div>
-
-            <div id="about" class="about section">
-                <div>
-                    <section class="about section"></section>
-                    <img class="home-img" src="./images/abhishek.png" alt="">
-                </div>
-                <div id="detail" class="about">
-                    <h3>DISCOVER</h3>
-                    <h1 id="about about section">ABOUT ME</h1>
-                    <p id="user-detail-intro" class="section">
-                        I am a creative web developer dedicated to crafting interactive, user-friendly, and feature-rich websites. Proficient 
-                        in technologies like JavaScript, Node.js, Express, and MongoDB, I bring a diverse skillset to the table. My passion for
-                    
-                        design and staying current with industry trends ensures I deliver innovative solutions. Let's connect to bring your web projects
-                        to life! 
-                        
-                    </p>
-                    <div class="details">
-                        <div>
-                            <p id="user-detail-name">
-                                Name : Abhishek Kumar Maurya
-                            </p>
-                            <p>
-                                Phone : <a href="tel:+919838859374">+91 9838859374</a>
-                            </p>
-                            <p>
-                                Age : 22
-                            </p>
-                            <p>
-                                Location : <a href="https://goo.gl/maps/b7vPeryhptjAse2y5" target="_blank">Gorakhpur,
-                                    Uttar Pradesh</a>
-                            </p>
-
-                        </div>
-                        <div>
-
-                            <p>
-                                Email : <a class="gmail"
-                                    href="mailto:abhithemauryas5@gmail.com">abhithemauryas5@gmail.com</a>
-                            </p>
-
-                            <p>
-                                LinkedIn : <a href="https://www.linkedin.com/in/abhithemauryas"
-                                    target="_blank">abhithemauryas</a>
-                            </p>
-
-                            <p>
-                                Github : <a href="https://www.github.com/abhithemauryas"
-                                    target="_blank">abhithemauryas</a>
-                            </p>
-
-                            <!-- <p>
-                                Twitter : <a href="https://twitter.com/maurya_abhi99" target="_blank">maurya_abhi99</a>
-                            </p> -->
-                        </div>
-                    </div>
-
-                    <a id="resume-button-2" class="nav-link resume" href="Abhishek-Maurya-Resume.pdf"
-                        download="Abhishek-Maurya-Resume.pdf" target="_blank">
-                        <button onclick="resume2()" id="resume-link-2">Download Resume</button>
-                    </a>
-
-                </div>
-                <h1 id="hide">About</h1>
-            </div>
-
-            <div class="github" id="github">
-                <div>
-                    <div>
-                        <div>
-                            <h1>My GitHub Stats</h1>
-                        </div>
-                        <div>
-                            <img src="./images/octocat.gif" alt="">
-                            <h2 class="githubid"><a href="https://github.com/abhithemauryas"
-                                    target="_blank">github.com/abhithemauryas</a></h2>
-
-                            <img loading="lazy" id="github-stats-card" alt="abhithemauryas's GitHub Stats"
-                                src="https://github-readme-stats.vercel.app/api?username=abhithemauryas" />
-
-                            <img loading="lazy" alt="abhithemauryas's GitHub Stats"
-                                src="https://awesome-github-stats.azurewebsites.net/user-stats/abhithemauryas?cardType=github&theme=tokyonight&preferLogin=false" />
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <img id="github-top-langs"
-                                src="https://github-readme-stats.vercel.app/api/top-langs/?username=abhithemauryas&layout=compact&theme=dark"
-                                alt="">
-                        </div>
-
-                        <div>
-                            <img id="github-streak-stats"
-                                src="https://github-readme-streak-stats.herokuapp.com/?user=abhithemauryas&theme=white" alt="">
-                        </div>
-
-                        <!-- <div class="profilesummary">
-                            <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=abhithemauryas&theme=github_dark" alt="">
-                        </div> -->
-                        <div class="react-activity-calendar">
-                            <img src="./images/calendar.png" alt="github-calendar">
-                            <!-- Loading stuff -->
-                            Loading the data just for you.
-                        </div>
-
-<!--                         <div class="calendar">
-                        
-                            Loading the data just for you.
-                        </div> -->
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="projects-section" id="projects">
-                <div>
-                    <h1>My Projects</h1>
-                </div>
-                <div class="gallery">
-
-                    <div class="project-card">
-                        <div class="image">
-                            <a href="https://comforting-gaufre-6fa7c1.netlify.app/" target="_blank">
-                                <img src="./images/carter.png" alt="">
-                            </a>
-                        </div>
-                        <div class="info">
-                            <div>
-                                <h3 class="project-title">Carter's</h3>
-                                <p class="project-description">
-                                    An website built individually for viewing and selecting tech products.
-                                    <br>
-                                    Tech Stacks:
-                                    <!-- <ul class="project-tech-stack"> -->
-                                    <li>HTML & CSS</li>
-                                    <li>JavaScript</li>
-                                    <li>NodeJS</li>
-                                    <li>MongoDB</li>
-                                    <!-- <li>HBS</li> -->
-                                    <!-- </ul> -->
-                                </p>
-                            </div>
-                            <div class="projectsbutton">
-                                <a class="project-deployed-link" href="https://comforting-gaufre-6fa7c1.netlify.app/"
-                                    target="_blank">
-                                    <button>Live</button>
-                                </a>
-
-                                <!-- <a href="https://drive.google.com/file/d/1KM6-AMy6qDdpMhI1nOqVEpr40Ay3avUR/view?usp=share_link" target="_blank">
-                                    <button>Video</button>
-                                </a> -->
-
-                                <a class="project-github-link" href="https://github.com/abhithemauryas/--scintillating-Work-864-P"
-                                    target="_blank">
-                                    <button>GitHub</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="image">
-                            <a href="https://647733fa6b8d2d0ee4a8e1d4--harmonious-fox-d4359e.netlify.app/" target="_blank">
-                                <img src="./images/colombia.png" alt="">
-                            </a>
-                            <!-- <img src="./images/zeestore.jpeg" alt=""> -->
-                        </div>
-                        <div class="info">
-                            <div>
-                                <h3 class="project-title">Columbia</h3>
-                                <p class="project-description">
-                                    Clone of <a href="https://www.columbia.com" target="_blank">columbia.com</a> i'e an
-                                    E-Commerce website
-                                    <br>
-                                    Built individually within 5 days.
-                                    <br>
-                                    Tech Stacks:
-                                    <!-- <ul class="project-tech-stack"> -->
-                                   <li>HTML & CSS</li>
-                                    <!-- <li>CSS</li> -->
-                                    <li>JavaScript</li>
-                                    <li>NodeJS</li>
-                                    <li>MongoDB</li>
-                                    <!-- </ul> -->
-                                </p>
-                            </div>
-                            <div class="projectsbutton">
-                                <a class="project-deployed-link" href="https://harmonious-fox-d4359e.netlify.app/"
-                                    target="_blank">
-                                    <button>Live</button>
-                                </a>
-
-                                <!-- <a href="https://drive.google.com/file/d/1xsPbNpu96tlxCZK0G9FIUc1-5v/view?usp=share_link"
-                                    target="_blank">
-                                    <button>Video</button>
-                                </a> -->
-
-                                <a class="project-github-link" href="https://github.com/abhithemauryas/Columbia-App"
-                                    target="_blank">
-                                    <button>GitHub</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="image">
-                            <a href="https://6470f7dcca822c0e3a3d9108--keen-quokka-ae72e8.netlify.app/" target="_blank">
-                                <img src="./images/tata1mg.png" alt="">
-                            </a>
-                        </div>
-                        <div class="info">
-                            <div>
-                                <h3 class="project-title">TATA 1mg</h3>
-                                <p class="project-description">
-                                    Fully functional clone of <a href="https://www.1mg.com/">TATA 1mg
-                                        </a>
-                                    <br>
-                                    Built collaboratively with a group of 5 members within a span of 6 days.
-                                    <br>
-                                    Tech stacks:
-                                <ul class="project-tech-stack">
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>JavaScript</li>
-                                </ul>
-                                </p>
-                            </div>
-                            <div class="projectsbutton">
-                                <a class="project-deployed-link" href="https://6470f7dcca822c0e3a3d9108--keen-quokka-ae72e8.netlify.app/" target="_blank">
-                                    <button>Live</button>
-                                </a>
-
-                                <!-- <a href="https://drive.google.com/file/d/1woZmoBbar_TEwrty2U4qYbgmAam/view"
-                                    target="_blank">
-                                    <button>Video</button>
-                                </a> -->
-
-                                <a class="project-github-link" href="https://github.com/abhithemauryas/Tata1-mg"
-                                    target="_blank">
-                                    <button>GitHub</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="image">
-                            <a href="https://6470f7dcca822c0e3a3d9108--keen-quokka-ae72e8.netlify.app/" target="_blank">
-                                <img src="./images/myworld.png" alt="">
-                            </a>
-                        </div>
-                        <div class="info">
-                            <div>
-                                <h3 class="project-title">My World</h3>
-                                <p class="project-description">
-                                   My-World is a e-commerced web-based Individual project 
-                                    <br>
-                                    Teck Stacks:
-                                    
-                                    <li>React</li>
-                                    <li>JavaScript</li>
-                                    <li>NodeJS</li>
-                                    <li>MongoDB</li>
-                                   
-                                </p>
-                            </div>
-                            <div class="projectsbutton">
-                                <a class="project-deployed-link" href="https://6470f7dcca822ce3a3d9108--keen-quokka-ae72e8.netlify.app/"
-                                    target="_blank">
-                                    <button>Live</button>
-                                </a>
-                                <a class="project-github-link"
-                                    href="https://github.com/abhithemauryas/my-world" target="_blank">
-                                    <button>GitHub</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="skills-section" id="skills">
-                <div class="skillset">
-                    <h1 class="-name">My Skillset + Toolset</h1>
-                </div>
-                <div class="skilldiv">
-                    <div class="skills-card">
-                        <h1 class="skills-card-name">Tech</h1>
-                        <img class="skills-card-img" src="" alt="">
-                        <div class="techskills">
-                            <div>
-                                <a href="https://html.com/" target="_blank">
-                                    <img title="HTML" src="./images/html5-svgrepo-com.svg" alt="">
-                                </a>
-                            </div>
-
-                            <div class="">
-                                <a href="https://css.com/" target="_blank">
-                                    <img title="CSS" src="./images/css3-01-svgrepo-com.svg" alt="">
-                                </a>
-                            </div>
-
-                            <div class="">
-                                <a href="https://www.javascript.com/" target="_blank">
-                                    <img title="JavaScript" src="./images/JavaScript_Logo.png" alt="">
-                                </a>
-                            </div>
-
-                            <div class="margin">
-                                <a href="https://nodejs.org/en/" target="_blank">
-                                    <img title="NodeJS" src="./images/nodejs.png" alt="">
-                                </a>
-                            </div>
-
-                            <div class="">
-                                <a href="https://expressjs.com/" target="_blank">
-                                    <img title="Express" src="./images/icons8-express-js.svg" alt="">
-                                </a>
-                            </div>
-
-                            <div class="">
-                                <a href="https://www.mongodb.com/" target="_blank">
-                                    <img title="MongoDB" src="./images/MongoDB_Logo.png" alt="">
-                                </a>
-                            </div>
-
-                            <div class="margin">
-                                <a href="https://socket.io/" target="_blank">
-                                    <img title="Socket.io" src="./images/socket-dot-io-svgrepo-com.svg" alt="">
-                                </a>
-                            </div>
-
-                            <!-- <div class="margin">
-                                <a href="https://redis.io/" target="_blank">
-                                    <img  loading="lazy" title="Redis" src="./images/redis-svgrepo-com.svg" alt="">
-                                </a>
-                            </div> -->
-
-                            <!-- <div class="">
-                                <a href="https://www.mysql.com/" target="_blank">
-                                    <img title="MySQL" src="./images/mysql-svgrepo-com.svg" alt="">
-                                </a>
-                            </div> -->
-
-                            <!-- <div class="">
-                                <a href="https://www.typescriptlang.org/" target="_blank">
-                                    <img title="TypeScript" src="./images/typescript-logo-svgrepo-com.svg" alt="">
-                                </a>
-                            </div> -->
-
-                            <div class="margin">
-                                <a href="https://aws.amazon.com/" target="_blank">
-                                    <img title="AWS" src="./images/aws-svgrepo-com (3).svg" alt="">
-                                </a>
-                            </div>
-
-                            <div class="">
-                                <a href="https://react.dev/" target="_blank">
-                                    <img title="React" src="./images/react-svgrepo-com.svg" alt="">
-                                </a>
-                            </div>
-
-                            <div class="">
-                                <a href="https://www.geeksforgeeks.org/data-structures/" target="_blank">
-                                    <img title="Data Structures and Algorithms" src="./images/algorithm.png" alt="">
-                                </a>
-                            </div>
-
-                            <!-- <div class="">
-                                <a href="https://python.org" target="_blank">
-                                   
-                                    <img title="Python" src="./images/python-svgrepo-com.svg" alt="">
-                                </a>
-                            </div> -->
-
-                        </div>
-
-                    </div>
-                    <div class="skills-card">
-                        <h1 class="skills-card-name" id="hide">Tech</h1>
-                        <img class="skills-card-img" id="hide" src="" alt="">
-                        <div class="content2">
-
-                            <h1>
-                                1200+
-                            </h1>
-                            <h2>
-                                Hours of hands on coding experience
-                            </h2>
-                            <h1>
-                                650+
-                            </h1>
-                            <h2>Questions on DSA conquered.</h2>
-                            <h1>
-                                5
-                            </h1>
-                            <h2>Projects completed individually and with group</h2>
-                            <h1>Skillset</h1>
-                            <!-- <ul> -->
-                            <li>Problem Solving</li>
-                            <li>Creativity</li>
-                            <li>Adaptability</li>
-                            <li>Teamwork</li>
-                            <li>Remote collaboration</li>
-                            <!-- </ul> -->
-                        </div>
-                    </div>
-                    <div class="skills-card">
-
-                        <h1 class="skills-card-name">Toolset</h1>
-                        <img class="skills-card-img" src="" alt="">
-                        <div class="techskills" class="">
-                            <div class="margin">
-                                <a href="https://code.visualstudio.com/" target="_blank">
-                                    <img loading="lazy" title="Visual Studio Code" src="./images/vs-code-logo.png"
-                                        alt="">
-                                </a>
-                            </div>
-
-                            <div class="margin">
-                                <a href="https://github.com/" target="_blank">
-                                    <img loading="lazy" title="Github" src="./images/github-142-svgrepo-com.svg" alt="">
-                                </a>
-                            </div>
-
-                            <div class="">
-                                <a href="https://www.npmjs.com/" target="_blank">
-                                    <img loading="lazy" title="npm" src="./images/npm-logo.png" alt="">
-                                </a>
-                            </div>
-
-
-                            <div class="">
-                                <a href="https://codepen.io/" target="_blank">
-                                    <img loading="lazy" title="Codepen" src="./images/codepen-svgrepo-com.svg" alt="">
-                                </a>
-                            </div>
-
-                            <div class="">
-                                <a href="https://replit.com/" target="_blank">
-                                    <img loading="lazy" title="Replit" src="./images/replit.svg" alt="">
-                                </a>
-                            </div>
-
-                            <div class="margin">
-                                <a href="https://vercel.com/" target="_blank">
-                                    <img loading="lazy" title="Vercel" src="./images/vercel-fill-svgrepo-com.svg"
-                                        alt="">
-                                </a>
-                            </div>
-
-                            <div class="margin">
-                                <a href="https://www.netlify.com/" target="_blank">
-                                    <img loading="lazy" title="Netlify" src="./images/netlify-logo.png" alt="">
-                                </a>
-                            </div>
-
-                            <div class="">
-                                <a href="https://codesandbox.io/" target="_blank">
-                                    <img loading="lazy" title="Codesandbox" src="./images/codesandbox-svgrepo-com.svg"
-                                        alt="">
-                                </a>
-                            </div>
-
-                            <div class="margin">
-                                <a href="https://railway.app/" target="_blank">
-                                    <img loading="lazy" title="Railway" src="./images/railway_logo.svg" alt="">
-                                </a>
-                            </div>
-
-                            <div class="">
-                                <a href="https://git-scm.com/" target="_blank">
-                                    <img loading="lazy" title="git" src="./images/git_logo.png" alt="">
-                                </a>
-                            </div>
-
-                            <div class="margin">
-                                <a href="https://planetscale.com/" target="_blank">
-                                    <img loading="lazy" title="planetscale" src="./images/planetscale.svg" alt="">
-                                </a>
-                            </div>
-
-                            <div class="margin">
-                                <a href="https://miro.com/" target="_blank">
-                                    <img loading="lazy" title="Miro" src="./images/miro-svgrepo-com.svg" alt="">
-                                </a>
-                            </div>
-
-                            <div class="margin">
-                                <a href="https://www.postman.com/" target="_blank">
-                                    <img loading="lazy" title="Postman" id=""
-                                        src="./images/postman-icon-svgrepo-com (1).svg" alt="">
-                                </a>
-                            </div>
-
-                            <div class="margin">
-                                <a href="https://slack.com/intl/en-in/" target="_blank">
-                                    <img loading="lazy" title="Slack" src="./images/slack-logo.png" alt="">
-                                </a>
-                            </div>
-
-                            <div class="margin">
-                                <a href="https://www.microsoft.com/en-us/edge?exp=e507&form=MA13FJ" target="_blank">
-                                    <img loading="lazy" title="Edge" src="./images/edge-svgrepo-com.svg" alt="">
-                                </a>
-                            </div>
-
-                            <div>
-                                <a href="https://workspace.google.com/products/calendar" target="_blank">
-                                    <img loading="lazy" title="Google Calendar"
-                                        src="./images/google-calendar-svgrepo-com.svg" alt="">
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="contact-section" id="contact">
-                <div class="message">
-                    <h1>Let's start working together</h1>
-                    <p>"Pleasure in the job puts perfction in the work"</p>
-                </div>
-                <div class="links">
-                    <div>
-                        <div>
-                            <a id="contact-linkedin" href="https://www.linkedin.com/in/abhithemauryas/" target="_blank">
-                                <img id="linkedin" src="./images/linkedin_logo.png" alt="">
-                            </a>
-                        </div>
-
-                        <div>
-                            <a id="contact-github" href="https://github.com/abhithemauryas" target="_blank">
-                                <img src="./images/github-logo.png" alt="">
-                            </a>
-                        </div>
-
-                        <!-- <div>
-                            <a href="https://mail.google.com/mail/u/1/?ogbl#inbox" target="_blank">
-                                <img src="./images/gmail.png" alt="">
-                            </a>
-                        </div> -->
-
-                        <div>
-                            <a href="https://in.pinterest.com/abhithemauryas/" target="_blank">
-                                <img src="./images/pinterest_logo.png" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="email">
-                    <div>
-                        <p id="contact-email">Email : <a
-                                href="mailto:abhithemauryas5@gmail.com">abhithemauryas5@gmail.com</a></p>
-                        <p id="contact-phone">Ph: <a href="tel:+919838859374">+91 9838859374</a></p>
-                    </div>
-                </div>
-
-            </div>
+        </div>
+    </section>
+
+    <!--!================= left Section =================------->
+    <div class="left_pannel" data-aos="fade-right">
+
+        <div class="icon_container">
+            <!-- github -->
+            <a href="https://github.com/abhithemauryas" id="contact-github" target="_blank"><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    role="img" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-github">
+                    <title>GitHub</title>
+                    <path
+                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                    </path>
+                </svg>
+            </a>
+            <!-- linkdin -->
+            <a href="https://www.linkedin.com/in/abhithemauyas/" id="contact-linkedin" aria-label="Linkedin"
+                target="_blank" rel="noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-linkedin">
+                    <title>Linkdin</title>
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+            </a>
+            <!-- phone -->
+            <a href="tel:+919838859374" id="contact-phone" aria-label="Phone"
+                target="_blank" rel="noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-phone-call">
+                    <title>9838859374</title>
+                    <path
+                        d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                    </path>
+                </svg>
+            </a>
         </div>
     </div>
 
+    <!--!================= Right Section =================------->
+    <div class="right_pannel" data-aos="fade-left">
+        <!-- <div class="email_container">
+            <a href="mailto:abhithemauryas5@gmail.com" id="contact-email">abhithemauryas5@gmail.com</a>
+        </div> -->
+    </div>
+
+    <!--!================= Main Section =================------->
+    <section class="main_pannel" id="main_section">
+
+        <!--!================= Home Section =================------->
+        <section id="home" class="home section">
+            <div class="home_container">
+                <h3 class="home_container_intro" data-aos="fade-right" >Hi, my name is</h3>
+                <h2 id="user-detail-name" data-aos="fade-up" class="home_container_intro_name" >Abhishek Kumar Maurya</h2>
+                <h1 data-aos="zoom-in" >Full Stack Web Developer</h1>
+                <p id="user-detail-intro" data-aos="fade-down">"Passionate full stack web developer with expertise in creating dynamic and responsive web applications."</p>
+                <a href="#contact" data-aos="zoom-in-down">Contact Me<i class="fa-regular fa-message"></i></a>
+            </div>
+        </section>
+
+        <!--!================= About Section =================------->
+        <section id="about" class="about section">
+            <div class="section_title">
+                 <span>About Me</span>
+            </div>
+            <div class="about_container" data-aos="fade-right">
+                <div class="about_left">
+                    <!-- <p id="user-detail-intro" >
+                        "
+                        "React","Redux","Context","materialui","HTML","CSS","SCSS","JavaScript","Backend","Typescript","NodeJS","Express","Socket.io","MongoDB","MySql","Postgresql","Redis","Sequelize","Prisma","AWS","
+                    </p> -->
+                 <p>I am a creative web developer dedicated to crafting interactive, user-friendly, and feature-rich websites. 
+                    Proficient in technologies like React, JavaScript, Node.js, Express, and MongoDB, I bring a diverse skillset
+                     to the table. My passion for design and staying current with industry trends ensures I deliver innovative solutions.
+                      Let's connect to bring your web projects to life!</p>
+                  
+                    <div class="about_stats">
+                        <div>
+                            <span class="stats_number">1000+</span>
+                            <span class="stats_title">Hours of coading</span>
+                        </div>
+                        <div>
+                            <span class="stats_number">500+</span>
+                            <span class="stats_title">DSA Problems</span>
+                        </div>
+                        <div>
+                            <span class="stats_number">15+</span>
+                            <span class="stats_title">Projects</span>
+                        </div>
+                    </div>
+                    <button id="resume-button-2" class="shine2" data-aos="zoom-in-down">
+                        <a download="Abhishek-Maurya-Resume.pdf" href="./assets/pdf/Abhishek-Maurya-Resume.pdf"
+                            id="resume-link-2">Download CV<i class="fa-solid fa-download"></i></a>
+                    </button>
+                </div>
+                <div class="about_right" data-aos="zoom-in-left">
+                    <div class="about_img_container" class="home-img">
+                        <img src="./assets/img/logo/abhishek.png" alt="" class="home-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--!================= Project Section =================------->
+        <section id="projects" class="projects section">
+            <!-- section heading -->
+            <div class="section_title">
+                 <span>My Projects</span>
+            </div>
+              <!--! -------------- Edito project card -------------- -->
+              <div class="project-card" data-aos="fade-up">
+                <!-- ------ project Image -------- -->
+                <div class="project-card_img_section" data-aos="fade-right">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel"
+                        data-bs-interval="3000">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://user-images.githubusercontent.com/106812942/221487682-0ee6a2ba-f81a-461e-b739-c45e02e4510b.png" class="d-block w-100" alt="Gator Home">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://user-images.githubusercontent.com/106812942/221487682-0ee6a2ba-f81a-461e-b739-c45e02e4510b.png" class="d-block w-100" alt="Gator Home">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://user-images.githubusercontent.com/106812942/221487718-00319f76-4d5f-4235-be50-e02c1c6ee08a.png" class="d-block w-100" alt="Gator Home">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://user-images.githubusercontent.com/106812942/221487747-34b7ed38-4743-4eb7-af27-549cfd0c74d0.png" class="d-block w-100" alt="Gator Home">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://user-images.githubusercontent.com/106812942/221487830-0e5b289d-3826-4da8-8d68-049d1a6ae879.png" class="d-block w-100" alt="Gator Home">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://user-images.githubusercontent.com/106812942/221487890-94abb563-f91f-4216-8e60-a1f51e996bec.png" class="d-block w-100" alt="Gator Home">
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card_description_section" data-aos="fade-left">
+                    <h2 class="project-title">Sweets Flower</h2>
+                    <div class="project-description">
+                        <p>
+                            "Sweets Flower": A clone of 1800Flowers.com, offering flowers, chocolates, cakes, and plants. Enjoy seamless navigation, reliable delivery, and exceptional customer support for memorable gifting experiences.</p>
+                        <p>
+                            Individual project </p>
+                    </div>
+                    <div class="project-tech-stack">
+                         <span>React</span>
+                        <span>Redux</span>
+                        <span>materialui</span>
+                        <span>Node</span>
+                        <span>Express</span>
+                        <span>MongoDb</span>
+                        <span>Css</span>
+                        <!-- <span>Nodemailer</span> -->
+                        <!-- <span>Stripe</span> -->
+                        <span>Cloudinary</span>
+                        <span>Bcrypt</span>
+                        <span>Redux-toolkit</span>
+                        <!-- <span>Chartjs</span>
+                        <span>ReactChart</span> -->
+                    </div>
+                    <div class="project_btn">
+                        <a href="https://github.com/abhithemauryas/Foodey" class="project-github-link"
+                            target="_blank"><svg xmlns="http://www.w3.org/2000/svg" role="img"
+                                viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="feather feather-github">
+                                <title>GitHub</title>
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="https://foodey-frontend.vercel.app/" class="project-deployed-link" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="feather feather-external-link">
+                                <title>External Link</title>
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--! -------------- Edito project card -------------- -->
+            <div class="project-card" data-aos="fade-up">
+                <!-- ------ project Image -------- -->
+                <div class="project-card_img_section" data-aos="fade-right">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel"
+                        data-bs-interval="3000">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://private-user-images.githubusercontent.com/115460755/314245554-d1615b6c-0809-44e9-87fc-cd265f6d7f8b.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTA5MTI0NDAsIm5iZiI6MTcxMDkxMjE0MCwicGF0aCI6Ii8xMTU0NjA3NTUvMzE0MjQ1NTU0LWQxNjE1YjZjLTA4MDktNDRlOS04N2ZjLWNkMjY1ZjZkN2Y4Yi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzIwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMyMFQwNTIyMjBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00YmQzYWU2Nzc1YmJiYTVlYjk4MDBkODk1YjQ0NDI2ODhlZWE3ZGE0NGFkZjhlNzQxMGM3MThjOWRkMDhlOGE2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.TVeSe8Ra3YGUiMhc-Binkn1GB1HpAFPeAL7IWMfXnZk" class="d-block w-100" alt="Gator Home">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://private-user-images.githubusercontent.com/115460755/314245899-0cf61780-44ae-485a-9355-94ff119e198f.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTA5MTI0NDAsIm5iZiI6MTcxMDkxMjE0MCwicGF0aCI6Ii8xMTU0NjA3NTUvMzE0MjQ1ODk5LTBjZjYxNzgwLTQ0YWUtNDg1YS05MzU1LTk0ZmYxMTllMTk4Zi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzIwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMyMFQwNTIyMjBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT04MDMyMWIzOTkzMzEyYWY1MWQxM2Y1ZWUxMjU2NjI5NzFlMmFmNDBlNGZhZTU0YWYwMDQ5NzY2MDdhOTQzMWNlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.sUuBYHaAGSBYAYjUSO729bmhgQPtIflOknME3kYjNTQ" class="d-block w-100" alt="Gator Home">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://private-user-images.githubusercontent.com/115460755/314246212-897d6d1c-f45d-42ea-b029-dd0403e30f86.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTA5MTI0NDAsIm5iZiI6MTcxMDkxMjE0MCwicGF0aCI6Ii8xMTU0NjA3NTUvMzE0MjQ2MjEyLTg5N2Q2ZDFjLWY0NWQtNDJlYS1iMDI5LWRkMDQwM2UzMGY4Ni5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzIwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMyMFQwNTIyMjBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00MzI3Yzc4Mjk3Y2Y4ZmFkNzU2ZWVjMzhjN2QxY2I3OGE4NzI5ZjY0MmVhNGQ4ZWY5ZWI2YWZhN2I1ZjJhZjQwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.V1bktRE5U01uECGas5VTeNFEA8U7XGB0p86LzmLR4Lg" class="d-block w-100" alt="Gator Home">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://private-user-images.githubusercontent.com/115460755/314246133-2fad6593-b63d-4157-8cdb-62c5f92bc805.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTA5MTI0NDAsIm5iZiI6MTcxMDkxMjE0MCwicGF0aCI6Ii8xMTU0NjA3NTUvMzE0MjQ2MTMzLTJmYWQ2NTkzLWI2M2QtNDE1Ny04Y2RiLTYyYzVmOTJiYzgwNS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzIwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMyMFQwNTIyMjBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0wYjFhM2UwZWUxZjg3Njk5MzQzOWRkOGVlOGQxZjFkOTM5OTUwM2RlNDU1ZDY3NzFjYWVhNDExMWExMTY1NTYzJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.JugiT-zP02wm5DBqlb9YDT_R3eiRK7_3G7eVVrmrNfQ" class="d-block w-100" alt="Gator Home">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://private-user-images.githubusercontent.com/115460755/314246427-124feb3c-07c4-45dd-8012-ab1481ae546e.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTA5MTI0NDAsIm5iZiI6MTcxMDkxMjE0MCwicGF0aCI6Ii8xMTU0NjA3NTUvMzE0MjQ2NDI3LTEyNGZlYjNjLTA3YzQtNDVkZC04MDEyLWFiMTQ4MWFlNTQ2ZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzIwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMyMFQwNTIyMjBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00YzZjYmI3NWU0YjJmZDlkMTNjMjg3YTE2YmI1NDg3NzAzNThjZTk0ZGNjMTA3ZTg0ZjQwZDBjMmFjZTllNWJhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.Q4eknswoVwwT5xLUz6Z6XmClCHFyteAKjpvb3G1tFnQ" class="d-block w-100" alt="Gator Home">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://private-user-images.githubusercontent.com/115460755/314246459-370b802b-f824-49a0-a9fd-4d5aa6f51c33.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTA5MTI0NDAsIm5iZiI6MTcxMDkxMjE0MCwicGF0aCI6Ii8xMTU0NjA3NTUvMzE0MjQ2NDU5LTM3MGI4MDJiLWY4MjQtNDlhMC1hOWZkLTRkNWFhNmY1MWMzMy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzIwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMyMFQwNTIyMjBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1iOTkxOWNmMWZkY2M4MmFiMmE2MDhiZmVlMjg2N2Y4ODU2MTc0MWQ1MDBlMzY0Mjk0ZTEwMDBmYWQwOTRkYzAxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.r1ZQ6ruExWeCYAOqXTqgdBU93G7vmEtQKWNXp9wLBn0" class="d-block w-100" alt="Gator Home">
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card_description_section" data-aos="fade-left">
+                    <h2 class="project-title">Amazon Clone</h2>
+                    <div class="project-description">
+                        <p>
+                            Amazon.com is a renowned online retailer offering a vast array of products including electronics, apparel, groceries, toys, and more. </p>
+                        <p>
+                            Individual project </p>
+                    </div>
+                    <div class="project-tech-stack">
+                         <span>React</span>
+                        <span>Redux</span>
+                        <span>materialui</span>
+                        <span>Node</span>
+                        <span>Express</span>
+                        <span>MongoDb</span>
+                        <span>Bcrypt</span>
+                        <span>Css</span>
+                    </div>
+                    <div class="project_btn">
+                        <a href="https://github.com/abhithemauryas/Amazon-clone" class="project-github-link"
+                            target="_blank"><svg xmlns="http://www.w3.org/2000/svg" role="img"
+                                viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="feather feather-github">
+                                <title>GitHub</title>
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="https://amazon-frontend-theta.vercel.app/" class="project-deployed-link" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="feather feather-external-link">
+                                <title>External Link</title>
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+
+               <!--! -------------- Gator project card -------------- -->
+               <div class="project-card" data-aos="fade-up">
+                <!-- ------ project Image -------- -->
+                <div class="project-card_img_section" data-aos="fade-right">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel"
+                        data-bs-interval="3000">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://github.com/Krishu7827/actual-shoes-7533/raw/main/Dental-app-fronEnd/Screenshot%202023-11-18%20165637.png" class="d-block w-100" alt="Gator Home">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://github.com/Krishu7827/actual-shoes-7533/raw/main/Dental-app-fronEnd/Screenshot%202023-11-18%20165957.png" class="d-block w-100" alt="Gator Home">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://github.com/Krishu7827/actual-shoes-7533/raw/main/Dental-app-fronEnd/Screenshot%202023-11-18%20164623.png" class="d-block w-100" alt="Gator Home">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://github.com/Krishu7827/actual-shoes-7533/raw/main/Dental-app-fronEnd/Screenshot%202023-11-18%20164537.png" class="d-block w-100" alt="Gator Home">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://github.com/abhithemauryas/Foodey/assets/115460755/d1a0980b-da97-4620-836e-242723850d22" class="d-block w-100" alt="Gator Home">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://github.com/abhithemauryas/Foodey/assets/115460755/febc3dda-920c-4ead-a623-bc102fc2bbea" class="d-block w-100" alt="Gator Home">
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card_description_section" data-aos="fade-left">
+                    <h2 class="project-title">Blue Apron</h2>
+                    <div class="project-description">
+                        <p>Blue Apron: Order gourmet delights easily, discovering a world of flavors with every click. Elevate dining, celebrate convenience and culinary excellence.</p>
+                        <p>
+                            Collaborative project</p>
+                    </div>
+                    <div class="project-tech-stack">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Node</span>
+                        <span>Nodemailer</span>
+                        <span>OTP Generator</span>
+                       
+                        
+                        
+                    </div>
+                    <div class="project_btn">
+                        <a href="https://github.com/Krishu7827/actual-shoes-7533" class="project-github-link"
+                            target="_blank"><svg xmlns="http://www.w3.org/2000/svg" role="img"
+                                viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="feather feather-github">
+                                <title>GitHub</title>
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="https://stunning-marigold-7ef2e3.netlify.app/" class="project-deployed-link" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="feather feather-external-link">
+                                <title>External Link</title>
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--! -------------- ALS project card (Flip)-------------- -->
+            <div class="project-card" data-aos="fade-up">
+                <!-- ------ project Image -------- -->
+                <div class="project-card_img_section" data-aos="fade-right">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel"
+                        data-bs-interval="3000">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://private-user-images.githubusercontent.com/115460755/314390456-e77ac97b-f12d-4a70-b5dd-d01b3c64a34c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTA5MTQ5ODcsIm5iZiI6MTcxMDkxNDY4NywicGF0aCI6Ii8xMTU0NjA3NTUvMzE0MzkwNDU2LWU3N2FjOTdiLWYxMmQtNGE3MC1iNWRkLWQwMWIzYzY0YTM0Yy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzIwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMyMFQwNjA0NDdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yOTg5OGM3MTZmNDQ5Nzg2MjFhZTQyZjUyYTVlMzZiNGY3MDc4NDI2ZGVjYTgwYjM0MDIzOWQ4ZDUzYTUzYWNlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.OB3RjdPwUK1H1NnJdN3yTgXvAsTSE_D-P7ZXLUIOrsI" class="d-block w-100" alt="Gator Home">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://private-user-images.githubusercontent.com/115460755/314390465-9731f19d-79e5-4798-8189-f99bf68cbbf7.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTA5MTQ5ODcsIm5iZiI6MTcxMDkxNDY4NywicGF0aCI6Ii8xMTU0NjA3NTUvMzE0MzkwNDY1LTk3MzFmMTlkLTc5ZTUtNDc5OC04MTg5LWY5OWJmNjhjYmJmNy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzIwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMyMFQwNjA0NDdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mMjI0MTE4NGEyYjA4MWRkNmIzNWZhODQ4YzAyOTU3MzEwMDVkM2E4ODgzOGY2M2Y3ZTUxMzkzM2Y5MDQwYTg3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.F9hoLElA9iyugEHJ6ZNDlQXomZ_AkklfqFGh5QrHGZI" class="d-block w-100" alt="Gator Home">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://private-user-images.githubusercontent.com/115460755/314390917-16a29966-b4df-461e-a1aa-e372f379c2c7.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTA5MTQ5ODcsIm5iZiI6MTcxMDkxNDY4NywicGF0aCI6Ii8xMTU0NjA3NTUvMzE0MzkwOTE3LTE2YTI5OTY2LWI0ZGYtNDYxZS1hMWFhLWUzNzJmMzc5YzJjNy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzIwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMyMFQwNjA0NDdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mNmJmYTkxZGQwMDc3M2ZkNmJiZWM3NTI5NzZlNWIwMTY0MjNjYzZkZWI3NmM2NTRkZDkxYjU3YjgzNzhiOTcwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.6Ni9Pu94Mj9ZPqeRgz9IcXUhbS8hpiSTvp56poEtaI8" class="d-block w-100" alt="Gator Home">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://private-user-images.githubusercontent.com/115460755/314391005-28d839d5-596b-4c42-a3ed-16c949dfabef.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTA5MTQ5ODcsIm5iZiI6MTcxMDkxNDY4NywicGF0aCI6Ii8xMTU0NjA3NTUvMzE0MzkxMDA1LTI4ZDgzOWQ1LTU5NmItNGM0Mi1hM2VkLTE2Yzk0OWRmYWJlZi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzIwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMyMFQwNjA0NDdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1iOTkzZGYzMzQwZTg0ZjJmYmFjYWYyYjY5NzBmZDZlNTM0MWQyMjZkN2I3MjJkM2NjNDcwYzAwYzVmMTk4Njg5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.5s4cAU1JR6d1A1bIOOfTvN7kcSPrUqYx_dFPJftUUbA" class="d-block w-100" alt="Gator Home">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://private-user-images.githubusercontent.com/115460755/314391052-f3e7f41c-5d30-4b9e-9197-e6252978b473.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTA5MTQ5ODcsIm5iZiI6MTcxMDkxNDY4NywicGF0aCI6Ii8xMTU0NjA3NTUvMzE0MzkxMDUyLWYzZTdmNDFjLTVkMzAtNGI5ZS05MTk3LWU2MjUyOTc4YjQ3My5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzIwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMyMFQwNjA0NDdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT05NDZkYjkyNjY5MTU3OTEwMjkzZmNiZjJhOTI4NzNmOWJmZjZiMzJjZGVjOGEyMzgyMTIxYzQ3ZTIyNzk5MDhlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.2V-I-0MBkRxfWgP7UFZOpVcDm5gINn3eHuqTHcV8nXw" class="d-block w-100" alt="Gator Home">
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card_description_section" data-aos="fade-left">
+                    <h2 class="project-title">TATA 1mg</h2>
+                    <div class="project-description">
+                
+                        <p>
+                            Tata 1mg, backed by Tata Group, offers medicines, hygiene, vitamins, and healthcare devices. Get quality products and convenient service for healthcare needs.
+                        </p>      
+                        <p>
+                            Collaborative project </p>
+                    </div>
+                    <div class="project-tech-stack">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>API</span>
+                        <span>Payment System</span>
+                        <span>OTP  Verification</span>
+                       
+                    </div>
+                    <div class="project_btn">
+                        <a href="https://github.com/abhithemauryas/Tata1-mg" class="project-github-link"
+                            target="_blank"><svg xmlns="http://www.w3.org/2000/svg" role="img"
+                                viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="feather feather-github">
+                                <title>GitHub</title>
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="https://rad-kangaroo-efbd6b.netlify.app/index.html" class="project-deployed-link" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="feather feather-external-link">
+                                <title>External Link</title>
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+         
+            <!--! -------------- Digital Basket project card (Flip)-------------- -->
+            
+
+            <!--! -------------- Roberto project card -------------- -->
+          
+            <div class="project-card" data-aos="fade-up">
+                <!-- ------ project Image -------- -->
+                <div class="project-card_img_section" data-aos="fade-right">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel"
+                        data-bs-interval="3000">
+                        <div class="carousel-inner">
+                             <div class="carousel-item active">
+                                <img src="https://private-user-images.githubusercontent.com/115460755/314415311-9e05e683-840c-4172-abb5-5c1c95c76834.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTA5MjIwMTQsIm5iZiI6MTcxMDkyMTcxNCwicGF0aCI6Ii8xMTU0NjA3NTUvMzE0NDE1MzExLTllMDVlNjgzLTg0MGMtNDE3Mi1hYmI1LTVjMWM5NWM3NjgzNC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzIwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMyMFQwODAxNTRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jYzAxMzNjOWMwMzg0ODE3NjkxNTcxYzVkMDQ1NDA4YTIzYjc2YTc3ODFjYjdlNWE3YjA5MzYyY2Y2Mjg1YWU2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.2LD_J5tF4VC0Xm8ESeJQLR18ZVIsoYMbSjt6J41wq3M" class="d-block w-100" alt="Gator Home">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://private-user-images.githubusercontent.com/115460755/314415782-f1bfef24-530c-42b4-b240-7c6d296f68d6.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTA5MjIwMTQsIm5iZiI6MTcxMDkyMTcxNCwicGF0aCI6Ii8xMTU0NjA3NTUvMzE0NDE1NzgyLWYxYmZlZjI0LTUzMGMtNDJiNC1iMjQwLTdjNmQyOTZmNjhkNi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzIwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMyMFQwODAxNTRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1iODBkMTA4ODcwNTcxYmVlYTViMTMyNTU2YmZkYzc1MWFmYzNkZDY3ZDQ2Yzg0NWUxYmM3OGM1OTNjMWJkMDI5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.opad7ScopKuuBe4QKneq11mHKTsD4Cxfaqb6Yt72nKA" class="d-block w-100" alt="Gator Home">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://private-user-images.githubusercontent.com/115460755/314416106-dd518356-0bbf-45fe-bcb9-1c7cea7161ae.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTA5MjIwMTQsIm5iZiI6MTcxMDkyMTcxNCwicGF0aCI6Ii8xMTU0NjA3NTUvMzE0NDE2MTA2LWRkNTE4MzU2LTBiYmYtNDVmZS1iY2I5LTFjN2NlYTcxNjFhZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzIwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMyMFQwODAxNTRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0zYzE2YWU2N2EzMTc2MzIwYjBlYzZmMjJkOGI5Zjk5NjU1ZGNhYmJlODdlYWRlM2ViN2Y4NzJkMmRlZjVmODAxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.x7svGuajbmrFY81FLW12xsXYdjJR7SIz3r1XTizkPz0" class="d-block w-100" alt="Gator Home">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://private-user-images.githubusercontent.com/115460755/314416390-a0d98bb0-6c83-4ed7-9069-f71137018f66.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTA5MjIwMTQsIm5iZiI6MTcxMDkyMTcxNCwicGF0aCI6Ii8xMTU0NjA3NTUvMzE0NDE2MzkwLWEwZDk4YmIwLTZjODMtNGVkNy05MDY5LWY3MTEzNzAxOGY2Ni5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzIwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMyMFQwODAxNTRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01YThhZTVkMTJkNzMxMmIwYmQ2ZmYxNDRiODg2MWUxYmIwNmVmOTZhYTdlMTJhYjg1ZTA4OTYwMzlmZTc4ZTIwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.8CBBL3TDrWzD2ZOEE7BimIWE7eWtZGJ5IeZ0OTLD8h4" class="d-block w-100" alt="Gator Home">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://private-user-images.githubusercontent.com/115460755/314416783-197af365-5d99-4fe3-9122-cdf51f2a61c4.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTA5MjIwMTQsIm5iZiI6MTcxMDkyMTcxNCwicGF0aCI6Ii8xMTU0NjA3NTUvMzE0NDE2NzgzLTE5N2FmMzY1LTVkOTktNGZlMy05MTIyLWNkZjUxZjJhNjFjNC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzIwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMyMFQwODAxNTRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02ZmYzOTFiYWRkOGQyZGMzN2FkMTUxZmRjY2NkZWQ2ZTliY2ZiZmMxZTgzNDU2YmI5OWJiNTllODc4YWQ3ZmQ2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9._iLZOH1aaCA-lD_1560n5zxTeV7Qn92_PczCOhZAUKA" class="d-block w-100" alt="Gator Home">
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card_description_section" data-aos="fade-left">
+                    <h2 class="project-title">DeskTime</h2>
+                    <div class="project-description">
+                        <p>DeskTime can be used for remote employee monitoring with the help of automatic time tracking and time tracking screenshots features.
+                            </p>
+                        <p>
+                            Individual project </p>
+                    </div>
+                    <div class="project-tech-stack">
+                        <span>html</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="project_btn">
+                        <a href="https://github.com/abhithemauryas/high-stitch-6643" class="project-github-link"
+                            target="_blank"><svg xmlns="http://www.w3.org/2000/svg" role="img"
+                                viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="feather feather-github">
+                                <title>GitHub</title>
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="https://courageous-raindrop-3bd8fa.netlify.app/home.html" class="project-deployed-link" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="feather feather-external-link">
+                                <title>External Link</title>
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--! -------------- mysecretnotes project card (Flip)-------------- -->
+          
+        </section>
+
+        <!--!================= Skills Section =================------->
+        <section id="skills" class="skills section" data-aos="fade-up">
+            <!-- section heading -->
+            <div class="section_title">
+                 <span>Skills</span>
+            </div>
+            <div class="skills_container">
+                <div class="frontend-skills">
+                    <h1>Tech Stacks</h1>
+                    <div class="fs_container">
+                        <div class="skills-card" data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom">
+                            <div class="skills-card-img" style="display: none;"></div>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                                class="skills-card-img" alt="html5">
+                            <span class="skills-card-name">HTML5</span>
+                        </div>
+                        <div class="skills-card" data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom">
+                            <div class="skills-card-img" style="display: none;"></div>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                                class="skills-card-img" alt="css3">
+                            <span class="skills-card-name">CSS3</span>
+                        </div>
+                        <div class="skills-card" data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom">
+                            <div class="skills-card-img" style="display: none;"></div>
+                            <img src="assets/img/icon/scss-removebg-preview.png"
+                                class="skills-card-img" alt="css3">
+                            <span class="skills-card-name">CSS3</span>
+                        </div>
+                        <div class="skills-card" data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom">
+                            <div class="skills-card-img" style="display: none;"></div>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                                class="skills-card-img" alt="JavaScript">
+                            <span class="skills-card-name">JavaScript</span>
+                        </div>
+                        <!-- <div class="skills-card" data-aos="fade-up"
+                        data-aos-anchor-placement="top-bottom">
+                        <div class="skills-card-img" style="display: none;"></div>
+                        <img src="assets/img/icon/typescript-removebg-preview.png"
+                            class="skills-card-img" alt="typescript">
+                        <span class="skills-card-name">Typescript</span>
+                    </div> -->
+                        <div class="skills-card" data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom">
+                            <div class="skills-card-img" style="display: none;"></div>
+                            <img src="assets/img/icon/express1.png"
+                                class="skills-card-img" alt="express">
+                            <span class="skills-card-name">Express.js</span>
+                        </div>
+                        <div class="skills-card" data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom">
+                            <div class="skills-card-img" style="display: none;"></div>
+                            <img src="assets/img/icon/node.png"
+                                class="skills-card-img" alt="nodejs">
+                            <span class="skills-card-name">Node.js</span>
+                        </div>
+                        <div class="skills-card" data-aos="fade-up"
+                        data-aos-anchor-placement="top-bottom">
+                        <div class="skills-card-img" style="display: none;"></div>
+                        <img src="assets/img/icon/socket.io.png"
+                            class="skills-card-img" alt="Socket.io">
+                        <span class="skills-card-name">Socket.io</span>
+                    </div>
+                    <!-- <div class="skills-card" data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom">
+                    <div class="skills-card-img" style="display: none;"></div>
+                    <img src="assets/img/icon/Prisma-removebg-preview.png"
+                        class="skills-card-img" alt="Prisma">
+                    <span class="skills-card-name">Prisma</span>
+                </div> -->
+             
+          
+                        <div class="skills-card" data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom">
+                            <div class="skills-card-img" style="display: none;"></div>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                                class="skills-card-img" alt="mongodb">
+                            <span class="skills-card-name">MongoDB</span>
+                        </div>
+                        <!-- <div class="skills-card" data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom">
+                            <div class="skills-card-img" style="display: none;"></div>
+                            <img src="./assets/img/icon/sql.png" class="skills-card-img" alt="sql">
+                            <span class="skills-card-name">SQL</span>
+                        </div> -->
+                        <!-- <div class="skills-card" data-aos="fade-up"
+                        data-aos-anchor-placement="top-bottom">
+                        <div class="skills-card-img" style="display: none;"></div>
+                        <img src="assets/img/icon/Postgresql-removebg-preview.png"
+                            class="skills-card-img" alt="postgress">
+                        <span class="skills-card-name">Postgresql</span>
+                    </div> -->
+                    <div class="skills-card" data-aos="fade-up"
+                        data-aos-anchor-placement="top-bottom">
+                        <div class="skills-card-img" style="display: none;"></div>
+                        <img src="assets/img/icon/redis-removebg-preview.png"
+                            class="skills-card-img" alt="Redis">
+                        <span class="skills-card-name">Redis</span>
+                    </div>
+                        <div class="skills-card" data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom">
+                            <div class="skills-card-img" style="display: none;"></div>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                                class="skills-card-img" alt="react">
+                            <span class="skills-card-name">React</span>
+                        </div>
+                        <div class="skills-card" data-aos="fade-up"
+                        data-aos-anchor-placement="top-bottom">
+                        <div class="skills-card-img" style="display: none;">
+                        </div>
+                        <img src="assets/img/icon/redux-removebg-preview.png"
+                            class="skills-card-img" alt="redux">
+                        <span class="skills-card-name">Redux.js</span>
+                    </div>
+                        <div class="skills-card" data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom">
+                            <div class="skills-card-img" style="display: none;"></div>
+                            <img src="./assets/img/icon/aws.png" class="skills-card-img" alt="JavaScript">
+                            <span class="skills-card-name">AWS</span>
+                        </div>
+                        <div class="skills-card" data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom">
+                            <div class="skills-card-img" style="display: none;"></div>
+                            <img src="./assets/img/icon/yml.png" class="skills-card-img" alt="JavaScript">
+                            <span class="skills-card-name">YML</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="backend-skills">
+                    <h1>Tools & Libraries</h1>
+                    <div class="bs_container">
+                        <div class="skills-card" data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom">
+                            <div class="skills-card-img" style="display: none;"></div>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+                                class="skills-card-img" alt="vscode">
+                            <span class="skills-card-name">VS Code</span>
+                        </div>
+                        <div class="skills-card" data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom">
+                            <div class="skills-card-img" style="display: none;"></div>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg"
+                                class="skills-card-img" alt="materialui">
+                            <span class="skills-card-name">Material UI</span>
+                        </div>
+                        <div class="skills-card" data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom">
+                            <div class="skills-card-img" style="display: none;"></div>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                                class="skills-card-img" alt="bootstrap">
+                            <span class="skills-card-name">Bootstrap</span>
+                        </div>
+                        <div class="skills-card" data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom">
+                            <div class="skills-card-img" style="display: none;"></div>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                                class="skills-card-img" alt="git">
+                            <span class="skills-card-name">Git</span>
+                        </div>
+                        <div class="skills-card" data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom">
+                            <div class="skills-card-img" style="display: none;"></div>
+                            <img src="https://www.svgrepo.com/show/217753/github.svg" class="skills-card-img"
+                                alt="github">
+                            <span class="skills-card-name">Github</span>
+                        </div>
+                        <div class="skills-card" data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom">
+                            <div class="skills-card-img" style="display: none;"></div>
+                            <img src="assets/img/icon/npm.png"
+                                class="skills-card-img" alt="github">
+                            <span class="skills-card-name">NPM</span>
+                        </div>
+                        <div class="skills-card" data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom">
+                            <div class="skills-card-img" style="display: none;"></div>
+                            <img src="./assets/img/icon/draw-io.svg" class="skills-card-img" alt="github">
+                            <span class="skills-card-name">Draw.io</span>
+                        </div>
+                        <div class="skills-card" data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom">
+                            <div class="skills-card-img" style="display: none;"></div>
+                            <img src="./assets/img/icon/netlify.png">
+                            <span class="skills-card-name">Netlify</span>
+                        </div>
+                        <div class="skills-card" data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom">
+                            <div class="skills-card-img" style="display: none;"></div>
+                            <img src="./assets/img/icon/heroku.png">
+                            <span class="skills-card-name">Heroku</span>
+                        </div>
+                        <div class="skills-card" data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom">
+                            <div class="skills-card-img" style="display: none;"></div>
+                            <img src="./assets/img/icon/canva.png">
+                            <span class="skills-card-name">Canva</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--!================= Github Stats =================------->
+        <section class="about react-activity-calendar" id="github" data-aos="fade-up">
+            <h2 class="section__title">Github contributions in the last year</h2>
+            <div class="Github-calendar ">
+                <!-- Loading stuff -->
+            </div>
+        </section>
+
+        <!--!================= Github Stats =================------->
+        <section class="portfolio section githubstates " id="githubstates" data-aos="fade-up">
+            <h2 class="section__title">GitHub Activities</h2>
+            <div id="carouselExampleIndicators" class="carousel slide github_carousel_container carousel-fade"
+                data-bs-ride="carousel"
+                data-bs-interval="3000">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner github-carousel-window ">
+                    <div class="carousel-item active">
+                        <!-- fix-Yunuslala -->
+                        <img src="https://github-readme-streak-stats.herokuapp.com?user=abhithemauryas&theme=github-dark&hide_border=true&date_format=j%20M%5B%20Y%5D"
+                            class="d-block w-100" alt="..." id="github-streak-stats">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=abhithemauryas&show_icons=true&locale=en&layout=compact&theme=github_dark&hide_border=true"
+                            id="github-top-langs" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://github-readme-stats.vercel.app/api?username=abhithemauryas&show_icons=true&locale=en&theme=github_dark&hide_border=true"
+                            id="github-stats-card" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <!--!================= Contact =================------->
+        <section id="contact" data-aos="fade-up">
+            <div class="section_title">
+                 <span>Contact</span>
+            </div>
+            <!-- ----- for mobile screen ---- -->
+            <!-- ----- for desktop screen ---- -->
+            <div class="contact_layout_container">
+                <div class="contact-mobile-active" data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom">
+                    <span>Get in Touch </span>
+                    <p>Let's start working together</p>
+                    <a href="mailto:abhithemauryas5@gmail.com.com" id="contact-email">Say Hello</a>
+                </div>
+                <div class="contact-info-container" data-aos="fade-zoom-in">
+                    <a href="tel:+919838859374" class="contact-info-card" data-aos="fade-right">
+                        <img src="./assets/img/icon/phone-call.svg" alt="">
+                        <span> Call Me</span>
+                        <span> +91 9838859374</span>
+                    </a>
+                    <a href="mailto:abhithemauryas5@gmail.com.com" class="contact-info-card" data-aos="fade-right">
+                        <img src="./assets/img/icon/mail.svg" alt="">
+                        <span>Write Me</span>
+                        <span>abhithemauryas5@gmail.com.com</span>
+                    </a>
+                    <a href="https://github.com/abhithemauryas" class="contact-info-card" data-aos="fade-left">
+                        <img src="./assets/img/icon/github.svg" alt="">
+                        <span>Checkout</span>
+                        <span>abhithemauryas</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/abhithemauryas/" class="contact-info-card"
+                        data-aos="fade-left">
+                        <img src="./assets/img/icon/linkedin.svg" alt="">
+                        <span>Ping Me</span>
+                        <span>Abhishek Kumar Maurya</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <div class="mobile_footer_icons">
+                    <div>
+                        <a target="_blank" href="https://github.com/abhithemauryas"><img src="./assets/img/icon/github.svg"
+                                alt=""></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/abhithemauryas/"><img
+                                src="./assets/img/icon/linkedin.svg" alt=""></a>
+                        <a target="_blank" href="tel:+919838859374"><img src="./assets/img/icon/phone-call.svg"
+                                alt=""></a>
+                        <a target="_blank" href="mailto:abhithemauryas5@gmail.com"><img
+                                src="./assets/img/icon/mail.svg" alt=""></a>
+                    </div>
+                </div>
+                <p>Redesigned & Rebuilt by <a href="https://github.com/abhithemauryas">Abhishek Kumar Maurya</a></p>
+                <!-- <p>Inspired By <a href="https://github.com/bchiang7/v4">Brittany Chiang</a></p> -->
+            </div>
+        </section>
+
+    </section>
+    <!-- !--==================== SCROLL TOP ====================-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init()
+        AOS.init({
+            disable: 'mobile',
+            duration: 400,
+            once: false
+        });
+    </script>
+    <!-- !--==================== SCROLL TOP ====================-->
+    <!-- <a href="#" class="scrollup" id="scroll-up">
+        <i class="fa-solid fa-arrow-up scrollup__icon"></i>
+    </a> -->
+    <!--!================= Bootstrp Script =================------->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
 
+<!--==================== GITHUB STATES LIBRARY ====================-->
+<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+
+<!--==================== GITHUB STATES LIBRARY ====================-->
+<script>GitHubCalendar(".Github-calendar", "abhithemauryas", { responsive: true });</script>
+
+<!--==================== SCROLL REVEAL JS ====================-->
+
+
+<!--==================== Custome JS ====================-->
+<script src="./js/main.js"></script>
+
+
 </html>
-
-<script src="./scripts.js"></script>
-<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
-</script>
-<script>
-    GitHubCalendar(".calendar", "abhithemauryas");
-
-    // or enable responsive functionality:
-    GitHubCalendar(".calendar", "abhithemauryas", { responsive: true });
-
-    // Use a proxy
-    GitHubCalendar(".calendar", "abhithemauryas", {
-        proxy(username) {
-            return fetch(`https://your-proxy.com/github?user=abhithemauryas`)
-        }
-    })
-</script>
